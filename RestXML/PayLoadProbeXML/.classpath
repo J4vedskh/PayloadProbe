@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="C:/CUSTOM_LIB/javax.ws.rs.jar"/>
+	<classpathentry kind="lib" path="C:/CUSTOM_LIB/jackson-databind-2.1.5.jar"/>
+	<classpathentry kind="lib" path="C:/CUSTOM_LIB/java-json.jar"/>
+	<classpathentry kind="lib" path="C:/CUSTOM_LIB/jackson-core-2.1.5.jar"/>
+	<classpathentry kind="lib" path="C:/CUSTOM_LIB/javax.ws.rs-api-2.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/CUSTOM_LIB/jackson-annotations-2.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/CUSTOM_LIB/slf4j.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
