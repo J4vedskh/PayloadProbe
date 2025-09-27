@@ -1,0 +1,10 @@
+{
+  "java.project.sourcePaths": [
+    "RestXML/PayLoadProbeXML/src/main/java"
+  ],
+  "java.project.outputPath": "RestXML/PayLoadProbeXML/build/classes",
+  "java.project.referencedLibraries": [
+    "RestXML/PayLoadProbeXML/src/main/webapp/WEB-INF/lib/**/*.jar"
+  ],
+  "java.configuration.updateBuildConfiguration": "automatic"
+}
