@@ -16,7 +16,7 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <jersey.version>2.37</jersey.version>
+    <jersey.version>2.34</jersey.version>
     <jackson.version>2.17.2</jackson.version>
     <jetty.plugin.version>9.4.53.v20231009</jetty.plugin.version>
   </properties>
@@ -48,6 +48,20 @@
       <groupId>org.json</groupId>
       <artifactId>json</artifactId>
       <version>20231013</version>
+    </dependency>
+
+    <!-- Jersey HK2 injection (required for Jersey 2.x) -->
+    <dependency>
+      <groupId>org.glassfish.jersey.inject</groupId>
+      <artifactId>jersey-hk2</artifactId>
+      <version>${jersey.version}</version>
+    </dependency>
+
+    <!-- JSR-330 injection API -->
+    <dependency>
+      <groupId>javax.inject</groupId>
+      <artifactId>javax.inject</artifactId>
+      <version>1</version>
     </dependency>
 
     <!-- Servlet API provided by container -->
@@ -98,7 +112,8 @@
           <httpConnector>
             <port>8080</port>
           </httpConnector>
-          <scanIntervalSeconds>3</scanIntervalSeconds>
+          <scanIntervalSeconds>0</scanIntervalSeconds>
+          <reload>manual</reload>
           <webApp>
             <contextPath>/</contextPath>
           </webApp>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <mirrors>
+    <mirror>
+      <id>repo1</id>
+      <name>Maven Central Mirror (repo1)</name>
+      <url>https://repo1.maven.org/maven2</url>
+      <mirrorOf>central</mirrorOf>
+    </mirror>
+  </mirrors>
+
+  <profiles>
+    <profile>
+      <id>increase-http-timeouts</id>
+      <properties>
+        <maven.wagon.http.retryHandler.count>3</maven.wagon.http.retryHandler.count>
+        <maven.wagon.http.pool>false</maven.wagon.http.pool>
+        <maven.wagon.http.timeout>60000</maven.wagon.http.timeout>
+        <maven.wagon.http.socketTimeout>60000</maven.wagon.http.socketTimeout>
+        <maven.wagon.httpconnectionManager.ttl>600000</maven.wagon.httpconnectionManager.ttl>
+      </properties>
+    </profile>
+  </profiles>
+
+  <activeProfiles>
+    <activeProfile>increase-http-timeouts</activeProfile>
+  </activeProfiles>
+</settings>

@@ -1,0 +1,40 @@
+# ==========================
+# PayloadProbe Git Ignore
+# Deep clean + Git hygiene
+# ==========================
+
+# Module build outputs
+/RestXML/PayLoadProbeXML/target/
+/RestXML/PayLoadProbeXML/build/
+/RestXML/PayLoadProbeXML/jetty.log
+/RestXML/PayLoadProbeXML/jetty.err
+
+# Java build artifacts
+*.class
+
+# Logs and temp files
+logs/
+*.log
+*.out
+*.tmp
+*.swp
+
+# IDE and workspace metadata
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+.vscode/
+bin/
+out/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Maven wrapper (optional - keep if you use wrapper)
+/.mvn/wrapper/maven-wrapper.jar
+
+# Tools - large archives not needed in Git
+/tools/apache-maven-3.9.6-bin-2.zip
