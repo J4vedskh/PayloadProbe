@@ -50,6 +50,20 @@
       <version>20231013</version>
     </dependency>
 
+    <!-- Jersey HK2 injection (required for Jersey 2.x) -->
+    <dependency>
+      <groupId>org.glassfish.jersey.inject</groupId>
+      <artifactId>jersey-hk2</artifactId>
+      <version>${jersey.version}</version>
+    </dependency>
+
+    <!-- JSR-330 injection API -->
+    <dependency>
+      <groupId>javax.inject</groupId>
+      <artifactId>javax.inject</artifactId>
+      <version>1</version>
+    </dependency>
+
     <!-- Servlet API provided by container -->
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -98,7 +112,8 @@
           <httpConnector>
             <port>8080</port>
           </httpConnector>
-          <scanIntervalSeconds>3</scanIntervalSeconds>
+          <scanIntervalSeconds>0</scanIntervalSeconds>
+          <reload>manual</reload>
           <webApp>
             <contextPath>/</contextPath>
           </webApp>
